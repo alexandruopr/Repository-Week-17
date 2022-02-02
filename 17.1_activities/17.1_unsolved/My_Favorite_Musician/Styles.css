@@ -1,0 +1,22 @@
+p {
+	color:  #000000;
+	font-family: futura, helvetica;
+	font-style: italic;
+	background-color: #92B3C2;
+	height: 200px;
+}
+
+h1 {
+	font-family: futura;
+	font-size: initial;
+
+}
+
+h2 {
+	font-family: 'Neonderthaw', cursive;
+}
+
+li {
+	background-color: #92B3C2;
+	height:  200px;
+}

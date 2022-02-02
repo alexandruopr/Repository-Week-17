@@ -1,0 +1,201 @@
+#inline-block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 75px;
+        padding: 10px;
+    margin-left: 25px;
+    max-width: 1440px;
+    
+}
+
+#inline-block p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #35404A ;
+    
+}
+
+.logo {
+    width: 25%;
+    padding: 1%;
+}
+
+.navItems {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 50%;
+    
+}
+
+.heroImg {
+    background-image: url(../Images/HeroBackground.png);
+    
+    width: 100%;
+    max-width: 1440px;
+    height: 70vh;
+    max-height: 900px;
+    display:flex;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+       
+}
+
+.heroText {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    min-width: 720px;
+}
+
+.subHeading {
+    display:flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 10%;
+    width: 90%;
+    max-width: 1440px;
+}
+
+.casestudyMS {
+    background-image: url(../Images/MSSocietyCaseStudy.png);
+    height: 500px;
+    display:flex;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    align-items: center;
+}
+
+.casestudyICS {
+    background-image: url(../Images/ICSCaseStudy.png);
+    height: 500px;
+    display:flex;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    align-items: center;
+}
+
+.heroAlexImage {
+    background-image: url(../Images/AlexPicBackground.png);
+    }
+
+.aboutMeSection {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+}
+
+.aboutMeSectionText {
+    width: 500px;
+    margin: 20px;
+}
+
+.aboutMePic{
+    background-image: url(../Images/AlexPhoto2.png);
+    
+    width: 250px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    margin: 20px; 
+}
+
+.footer {
+     display:flex;
+     justify-content: space-around;
+     background-color: #35404A;
+     color: #F9F9F9;
+     
+     align-content: center;
+     
+}
+
+.footer p {
+    color: #F9F9F9;
+}
+
+
+/* FONTS */
+h1, h2, h3, h4, h5, body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #F9F9F9;
+}
+
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #35404A;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+
+h4 {
+    font-size: 36px;
+    color: #7B61FF;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: lighter;
+    }
+p {
+    font-size: 18px;
+    color: #35404A;
+}
+
+/* BUTTONS */
+
+.heroButtons {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    
+}
+
+.whiteButton {
+    background-color: #F9F9F9;
+    width:150px;
+    min-width:150px;
+    height: 50px;
+    border-radius: 5px;
+    color: #35404A;
+    margin-right: 25px;
+    
+    
+}
+
+.transparentButton {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width:150px;
+    min-width:150px;
+    height: 50px;
+    border-radius: 5px;
+    color: #F9F9F9;
+    display:flex;
+}
+
+
