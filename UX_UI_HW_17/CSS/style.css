@@ -22,6 +22,10 @@
     padding: 1%;
 }
 
+body {
+    display: block;
+}
+
 .navItems {
     display: flex;
     width: 75%;
