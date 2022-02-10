@@ -1,62 +1,89 @@
-#inline-block {
+body {
+    margin: 0 1.5em;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0 10%;
+    max-width: 1440px;
+    display:block;
+   
+    
+}  
+#nav {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     height: 75px;
-        padding: 10px;
-    margin-left: 25px;
+    padding: 10px 0;
     max-width: 1440px;
-    
-}
-
-#inline-block p {
-    font-size: 24px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #35404A ;
-    
-}
-
-.logo {
-    width: 25%;
-    padding: 1%;
-}
-
-body {
-    display: block;
+    text-transform: uppercase;
 }
 
 .navItems {
     display: flex;
-    width: 75%;
     align-items: center;
-    justify-content: space-evenly;
-    margin-left: 50%;
+}
+
+#nav p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #35404A ;
+    margin-left: 4vh;
     
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.hamburgerMenu {
+    height: 50px;
+    margin-right: 15px;
 }
 
 .heroImg {
     background-image: url(../Images/HeroBackground.png);
-    
     width: 100%;
     max-width: 1440px;
     height: 70vh;
     max-height: 900px;
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-       
+    align-items: center;   
+    z-index: -2;    
+   
 }
 
-.heroText {
-    width: 50%;
+.heroImg img {
+    
+    width: 720px;
+    position: absolute;
+    margin-bottom: 160px;
+    z-index: -1;
+    
+}
+
+.heroImg h1 {
+    margin: -30px 0;
+    color: #35404A;
+    z-index: 1;
+}
+
+.heroText {    
     margin-left: 10%;
-    margin-top: 25%;
-    margin-bottom: 25%;
-    min-width: 720px;
+    margin: 25% 200px;
+    max-width: 50%;
+
+}
+
+.heroAlexImage {
+    max-width: 50%;
 }
 
 .subHeading {
@@ -66,35 +93,115 @@ body {
     margin-left: 10%;
     width: 90%;
     max-width: 1440px;
+    
 }
 
-.casestudyMS {
-    background-image: url(../Images/MSSocietyCaseStudy.png);
-    height: 500px;
-    display:flex;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.casestudies {
+    padding: 10px 0;
+}
+
+.casestudies img{
     max-width: 1440px;
-    align-items: center;
+    object-fit: fill;
+    
 }
 
-.casestudyICS {
-    background-image: url(../Images/ICSCaseStudy.png);
-    height: 500px;
-    display:flex;
+#casestudyICSmobile, #casestudyMSmobile{
+    max-width: 540px;
+    padding: 25px 0;
+}
+
+/*MS SOCIETY CASE STUDY */
+
+.MSdesktop {
+    display: flex;
+       
+    
+}
+
+.MSdesktop #msBackground{
+    position: absolute;
+    z-index: -1;
+}
+
+.MScaseStudyText {
+    padding: 0 40px;
+    min-width: 540px;
+
+}
+
+.MSdesktop #msPhone {
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1440px;
-    align-items: center;
+    bottom: 77px;
+    right: 25%;
+    transition-duration: 0.5s;
+    transform: scale(100%);
+    padding: 0 200px;
+    
+    
 }
 
-.heroAlexImage {
-    background-image: url(../Images/AlexPicBackground.png);
-    }
+.MSdesktop:hover #msPhone{
+    
+    transform: scale(110%);
+    bottom: 97px;
+}
+
+.MSdesktop #caseStudyLineMS {
+    transition-duration: 0.5s;
+    transform: scale(100%);
+}
+
+.MSdesktop:hover #caseStudyLineMS {
+    transform: scaley(350%);
+}
+
+/*ISC SOCIETY CASE STUDY */
+
+.ISCdesktop {
+    display: flex;
+ 
+    
+}
+
+.ISCdesktop #icsBackground{
+    position: absolute;
+    z-index: -1;
+}
+
+.ISCcaseStudyText {
+    padding: 0 40px;
+    min-width: 540px;
+
+}
+
+.ISCdesktop #msPhone {
+    position: relative;
+    bottom: 77px;
+    right: 25%;
+    transition-duration: 0.5s;
+    transform: scale(100%);
+    padding: 0 200px;
+    
+    
+}
+
+.ISCdesktop:hover #msPhone{
+    
+    transform: scale(110%);
+    bottom: 97px;
+}
+
+.ISCdesktop #caseStudyLineMS {
+    transition-duration: 0.5s;
+    transform: scale(100%);
+}
+
+.ISCdesktop:hover #caseStudyLineMS {
+    transform: scaley(350%);
+}
+
+/*ABOUT ME*/
 
 .aboutMeSection {
     display: flex;
@@ -105,11 +212,12 @@ body {
 .aboutMeSectionText {
     width: 500px;
     margin: 20px;
+    color: #35404A;
 }
 
 .aboutMePic{
     background-image: url(../Images/AlexPhoto2.png);
-    
+    object-fit: cover;
     width: 250px;
     height: 500px;
     background-position: center;
@@ -166,40 +274,110 @@ h5 {
     }
 p {
     font-size: 18px;
-    color: #35404A;
+}
+
+h6 {
+    font-size: 36px;
 }
 
 /* BUTTONS */
 
 .heroButtons {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 18px;
-    
 }
 
 .whiteButton {
+    width: 150px;
+    min-width: 150px;
     background-color: #F9F9F9;
-    width:150px;
-    min-width:150px;
-    height: 50px;
-    border-radius: 5px;
+    padding: 15px;
     color: #35404A;
-    margin-right: 25px;
-    
-    
+    border-radius: 5px;
+    text-align: center; 
 }
 
+.whiteButton:hover{
+        background-color: #7B61FF;
+        cursor: pointer;
+    
+}
 .transparentButton {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    width:150px;
-    min-width:150px;
-    height: 50px;
-    border-radius: 5px;
+    width: 150px;
+    min-width: 150px;
+    border: 3px solid #F9F9F9;
+    padding: 15px;
     color: #F9F9F9;
-    display:flex;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
+
+
+/* MY SKILLS */
+
+.mySkillsGrid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 23px;
+    margin: 0px 25px 150px 25px;
+}
+.mySkillsGrid img {
+    width: 10em;
+    padding: 50px 0;
+    
+}
+
+.mySkillsGrid div {
+    background-color: #35404A;
+    border-radius: 5px;
+    width: 333px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySkillsGrid div:hover {
+    background: #7B61FF;
+}
+
+.mySkillsGrid h6 p {
+    color: #F9F9F9;
+    
+}
+
+@media (max-width: 1240px) {
+    .mySkillsGrid {
+       grid-auto-flow: row;
+       justify-content: center;
+    }
+}
+    
+@media (max-width: 680px) {
+    #nav p, .MSdesktop, .ISCdesktop {
+        display: none;
+    }
+    .aboutMeSection {
+        flex-direction: column;
+    max-width: 1440px;
+    }
+}
+
+@media (min-width:681px) {
+    .hamburgerMenu, #casestudyMSmobile, #casestudyICSmobile {
+        display: none;
+    }
+     
+}
+
+/*Questions
+1. How do I reduce space between text in headings and subheadings
+2. my hover function isn't working
+3. best practices for changing color of text (if i predefine it i can't change it.
+
+*/
