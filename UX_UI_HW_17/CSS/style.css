@@ -5,6 +5,7 @@ body {
     padding: 0 10%;
     max-width: 1440px;
     display:block;
+    transition: all 0.5s;
    
     
 }  
@@ -56,7 +57,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;   
-    z-index: -2;    
+       
    
 }
 
@@ -65,7 +66,7 @@ body {
     width: 720px;
     position: absolute;
     margin-bottom: 160px;
-    z-index: -1;
+    z-index: 1;
     
 }
 
@@ -79,6 +80,7 @@ body {
     margin-left: 10%;
     margin: 25% 200px;
     max-width: 50%;
+    z-index: 2;
 
 }
 
@@ -98,11 +100,12 @@ body {
 
 .casestudies {
     padding: 10px 0;
+    max-width: 1440px;
 }
 
 .casestudies img{
     max-width: 1440px;
-    object-fit: fill;
+    object-fit: cover;
     
 }
 
@@ -127,6 +130,7 @@ body {
 .MScaseStudyText {
     padding: 0 40px;
     min-width: 540px;
+    max-width: 640px;
 
 }
 
@@ -136,7 +140,7 @@ body {
     right: 25%;
     transition-duration: 0.5s;
     transform: scale(100%);
-    padding: 0 200px;
+    
     
     
 }
@@ -172,7 +176,7 @@ body {
 .ISCcaseStudyText {
     padding: 0 40px;
     min-width: 540px;
-
+    max-width: 640px;
 }
 
 .ISCdesktop #msPhone {
@@ -181,7 +185,7 @@ body {
     right: 25%;
     transition-duration: 0.5s;
     transform: scale(100%);
-    padding: 0 200px;
+    
     
     
 }
@@ -302,6 +306,7 @@ h6 {
 .whiteButton:hover{
         background-color: #7B61FF;
         cursor: pointer;
+        color: #F9F9F9;
     
 }
 .transparentButton {
@@ -314,6 +319,11 @@ h6 {
     text-align: center;
 }
 
+.transparentButton:hover {
+    border: 3px solid #7B61FF;
+    color :#F9F9F9;
+    background-color: #7B61FF
+}
 
 
 
