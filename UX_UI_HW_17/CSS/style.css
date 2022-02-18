@@ -4,6 +4,7 @@ body {
     margin: auto;
     padding: 0 10%;
     max-width: 1440px;
+    
     display:block;
     transition: all 0.5s;
    
@@ -47,7 +48,7 @@ body {
     background-image: url(../Images/HeroBackground.png);
     width: 100%;
     max-width: 1440px;
-    height: 70vh;
+    
     max-height: 900px;
     display:flex;
     flex-direction: row;
@@ -57,6 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;   
+    min-height: 480px;
        
    
 }
@@ -330,10 +332,10 @@ h6 {
 /* MY SKILLS */
 
 .mySkillsGrid {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 23px;
     margin: 0px 25px 150px 25px;
+
 }
 .mySkillsGrid img {
     width: 10em;
@@ -341,11 +343,17 @@ h6 {
     
 }
 
+.mySkillsGrid h6 {
+    margin: 0px;
+}
+
 .mySkillsGrid div {
     background-color: #35404A;
     border-radius: 5px;
-    width: 333px;
-    padding: 15px;
+    max-width: 350px;
+    
+    
+    padding: 0px 35px;
 
     display: flex;
     flex-direction: column;
@@ -363,8 +371,9 @@ h6 {
 
 @media (max-width: 1240px) {
     .mySkillsGrid {
-       grid-auto-flow: row;
-       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       
     }
 }
     

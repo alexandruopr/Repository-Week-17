@@ -1,0 +1,86 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    padding: 20px 0px;
+    max-width: 1440px;
+    
+}
+
+.nav-link {
+    color: #35404A !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.heroImage {
+    width: 100%;
+    
+}
+
+
+
+.intro {
+    text-align: center;
+}
+
+.introTitle {
+    margin: 50px 0;
+}
+
+.accordion {
+    width: 75%; 
+    
+}
+
+.introSections {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-weight: bold !important;
+    color: white;
+    font-size: 72px !important;
+    
+}
+
+h4 {
+    color: #FFD388;
+    font-size: 24px;
+}
+
+h2 {
+    color: #A82734;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-image: url(../images/MSHeroBackground2.png);
+    max-width: 1440px;
+    background-repeat: none;
+    background-size: cover;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.jumbotronText {
+    margin-left: 15vh;
+    
+}
+
+.jumbotronText .lead {
+    max-width: 500px;
+}
+
+.btn {
+    border: 3px solid #FFD388;
+    background-color: transparent;
+    color: #FFD388;
+}
+
+.btn
